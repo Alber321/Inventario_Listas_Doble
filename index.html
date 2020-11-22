@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario enlazada</title>
+</head>
+<body>
+    <style>
+        form fieldset {
+            float: left;
+            width: 47.43%;
+            height: 95%;
+            border: indigo 5px dotted;
+        }
+        .fieldset-1{
+            float: left;
+            width: 97%;
+            height: 100%;
+            border: red 5px dashed;
+        }
+        input:focus {
+            border: 5px solid #000;
+            background: #F3F3F3;
+        }
+        h1{
+            border: darkcyan 5px double;
+            font-size: 35px ;
+        }
+        input[type=button]{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type=text], [type=number]{
+            background-color: #96d4d4;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 5px 35px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        h3{
+            font-size: 25px;
+        }
+    </style>
+    <center><h1>APP Para control de Inventario</h1></center>
+    <fieldset class="fieldset-1">
+<div>
+    <form>
+        <fieldset>
+            <center><h1>FORMULARIO</h1></center>
+            <h3><label for="text">Codigo del Producto:</label></h3>
+            <input type="number" id="codigo">
+            <p></p>
+            <h3><label for="text">Nombre del producto:</label></h3>
+            <input type="text" id="nombre">
+            <p></p>
+            <h3><label for="text">Cantidad de Productos:</label></h3>
+            <input type="number" id="cantidad">
+            <p></p>
+            <h3><label for="text">Coste del Producto:</label></h3>
+            <input type="number" id="coste">
+            <p></p>
+            <h3><label for="text">Descripcción:</label></h3>
+            <input type="text" id="desc">
+            <p></p>
+            <input type="button" id="Agregar" value="Agregar Producto">
+            <p></p>
+        </fieldset>
+    </form>    
+</div>
+<div>
+    <form>
+        <fieldset>
+            <center><h1>BOTONES</h1></center>
+                <h3><label for="numero">Borrar por codigo de Producto:</label></h3>                
+                <input type="button" value="Borrar" id="Borrar" />
+                <h3><label for="numero">Buscar Producto por Codigo:</label></h3>
+                <input type="button" id="Buscar" value="Buscar">
+                <p></p>
+                <input type="button" id="Mostrar" value="Mostrar Producto">
+                <p></p>
+                <input type="button" id="MostrarInverso" value="Mostrar Productos (Orden Inverso)">
+                <p></p>
+                <p></p>
+                <input type="button" id="Insertar" value="Insertar la Posición del Producto">
+                <br>
+                <br>
+                <input type="number" name="posicion" id="posicion">
+                <p></p>
+                <input type="button" id="addPrimero" value="Agregar Primera Posición">
+                <input type="button" id="EliminarPrimero" value="Eliminar Primera Posición">
+        </fieldset>    
+    </form>
+</div>
+</fieldset>>
+<form>
+    <fieldset name="2">
+        <div>
+            <h1>LISTA</h1>
+            <p id="Lista"></p>
+        </div>
+    </fieldset>
+</form>
+</body>
+<script src="main.js"></script>
+</html>
